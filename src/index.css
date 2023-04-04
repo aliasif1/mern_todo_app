@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  box-sizing: border-box; 
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Signup and Login Screens */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/bgImage.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.auth-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.auth-title {
+  font-size: 2.5rem;
+  padding: 0px;
+  margin: 0px;
+  color: teal;
+}
+
+.auth-form{
+  margin-top: 16px;
+}
+
+.auth-form .form-control{
+  margin-bottom: 16px;
+}
+
+.auth-form .form-control label{
+  font-size: 1.2rem;
+}
+
+.auth-form .form-control input{
+  margin-top: 4px;
+  width: 100%;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  padding: 6px;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+}
+
+.auth-form .form-control button {
+  display: inline-block;
+  margin-top: 16px;
+  width: 100%;
+  padding: 8px;
+  background-color: teal;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+}
+
+.auth-form .form-control button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.auth-container p.toggle-auth-screen{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.auth-container p.toggle-auth-screen a{
+  color: teal;
+  text-decoration: underline;
+}
+
+.error-message{
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Home screen */
+.home-container{
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  padding: 20px;
+  background: url('./assets/bgImage.jpg');
+}
+
+.tasks-container{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  width: 800px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px gray;
+  padding-bottom: 8px;
+}
+
+.navbar-title{
+  font-size: 2.2rem;
+  color: teal;
+}
+
+.navbar-content{
+  display: flex;
+  gap: 12px;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.logout-btn {
+  padding: 6px 10px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+}
+
+.logout-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+form.add-task {
+  margin-bottom: 24px;
+}
+
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px;
+  padding: 14px 12px;
+  background-color: white;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #C5E5E5, #A2D6D9);
+}
+
+.task-item.priority{
+  background: linear-gradient(to bottom right, #FDEAEA, #F9D9D9);
+}
+
+.task-item .task-description{
+  flex: 1;
+}
+
+.task-item .task-text{
+  margin-bottom: 6px;
+}
+
+.task-item .task-date{
+  font-style: italic;
+}
+
+.task-option-icon{
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+.task-option-icon:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.no-task-message{
+    color: teal;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.add-task h2 {
+  color: teal;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.add-task .form-control{
+  margin-bottom: 16px;
+  color: black;
+}
+
+.add-task .form-control label{
+  font-size: 1.1rem;
+}
+
+.add-task .form-control input[type="text"]{
+  width: 100%;
+  padding: 4px;
+  font-size: 1.1rem;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+  margin-top: 4px;
+  height: 2.2rem;
+}
+
+.add-task .form-control input[type="checkbox"]{
+  font-size: 1.5rem;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+  margin-left: 12px;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.add-task .form-control button {
+  display: inline-block;
+  width: 40%;
+  padding: 8px;
+  background-color: teal;
+  color: white;
+  font-weight: 100;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+}
+
+.add-task .form-control button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
