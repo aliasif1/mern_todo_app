@@ -10,10 +10,13 @@ An task manager application built with MERN stack technology.
     - React
     - Express
     - Node
-    - Mongoose
+    - MongoDB
 
 ## Features
 - Mobile Frendly 
 - JWT Authentication
 - Multiple Routes
 - Tasks Saved to Database
+
+
+### Images taken from [unsplash](https.unsplash.com)
